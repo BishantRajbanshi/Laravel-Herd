@@ -24,3 +24,8 @@ Route::get('/user', function (Request $request) {
         Route::post('products',[ProductController::class, 'store']);
         Route::put('products/{Title}',[ProductController::class, 'update']);
         Route::delete('products/{Title}',[ProductController::class, 'destroy']);
+
+        Route::get('Tasks',[TaskController::class, 'index']);
+        Route::post('Tasks',[TaskController::class, 'store']);
+        Route::put('Tasks/{id}',[TaskController::class, 'update']);
+        Route::delete('Tasks/{id}',[TaskController::class, 'destroy']);
